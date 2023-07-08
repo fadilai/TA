@@ -1,10 +1,17 @@
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import Mainpage from "../../components/Mainpage/Mainpage";
+import Flashdeals from "../../components/FlashDeals/Flashdeals";
 
-function Home() {
+
+function Home(cartItems) {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
-      <p>INI HOME</p>
+      <Header cartItems={cartItems}/>
+      <Mainpage />
+      <Flashdeals/>
+      
+      <Footer/>
     </div>
   );
 }
