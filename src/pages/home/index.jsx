@@ -4,13 +4,13 @@ import Mainpage from "../../components/Mainpage/Mainpage";
 import Flashdeals from "../../components/FlashDeals/Flashdeals";
 
 
+
 function Home(cartItems) {
   return (
     <div>
       <Header cartItems={cartItems}/>
       <Mainpage />
       <Flashdeals/>
-      
       <Footer/>
     </div>
   );
